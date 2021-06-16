@@ -1,1 +1,9 @@
 <h1>{{title}}</h1>
+
+<table>
+    <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.userName}}</td>
+        <td><button class="btn btn-danger">Remove</button></td>
+    </tr>
+</table>
